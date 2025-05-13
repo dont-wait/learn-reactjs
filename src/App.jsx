@@ -3,16 +3,15 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-// () => { }
+//component = html + css + js
+const MyComponent = () => {
+  return (
+    <div>dontwait update v2</div>
+  );
+}
+
 const App = () => {
   const [count, setCount] = useState(0)
-
-
-  const handleClick = () => {
-    console.log('Hello world - dontwait');
-  }
-
-  handleClick();
 
   return (
     <>
@@ -24,7 +23,7 @@ const App = () => {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Hello world - dontwait</h1>
+      <MyComponent />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
