@@ -1,7 +1,13 @@
 //component = html + css + js
+import './style.css'
 const MyComponent = () => {
     return (
-        <div>dontwait update v2</div>
+        <>
+            <div
+                style={{ borderRadius: "10px", color: "blue" }
+                }>dontwait update v2</div>
+            <div className="child">dontwait update v3</div>
+        </>
     );
 }
 export default MyComponent; //lun lun export ra MyComponent mac dinh
