@@ -9,7 +9,7 @@ const TodoContent = (props) => {
     // const age = props.age
     // const data = props.data
 
-    //c3 
+    //c3
     //thay props bang key can lay vd: {name} {age}
 
     return (
@@ -17,6 +17,7 @@ const TodoContent = (props) => {
             <div>My name is {JSON.stringify(data)}</div>
             <div>Learning React</div>
             <div>Learning Angular</div>
+
         </div>
     )
 }
