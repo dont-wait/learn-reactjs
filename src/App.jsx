@@ -19,6 +19,7 @@ const App = () => {
       <TodoNew
         addNewToDo={addNewToDo}
         name={name}
+        data={data}
       />
       <TodoContent
         name={name}

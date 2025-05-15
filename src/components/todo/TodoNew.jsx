@@ -4,7 +4,7 @@ const TodoNew = (props) => {
         <div className='todo-new'>
             <input type="text" placeholder='Input a new work' />
             <button>Add</button>
-            {addNewToDo(JSON.stringify(name))}
+            {addNewToDo(name)}
         </div>
     )
 }
