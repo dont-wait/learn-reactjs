@@ -12,7 +12,7 @@ const TodoContent = (props) => {
     console.log("Check props: ", props)
     return (
         <div className='todo-content'>
-            <div>My name is {JSON.stringify(data)}</div>
+            <div>My name is {JSON.stringify(data.address)}</div>
             <div>Learning React</div>
             <div>Learning Angular</div>
             <div>

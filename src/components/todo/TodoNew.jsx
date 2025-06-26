@@ -6,10 +6,10 @@ const TodoNew = (props) => {
     //const valueInput = "";
     const [valueInput, setValueInput] = useState(""); //default value is empty string
 
-    const { addNewToDo, name } = props;
+    const { addNewToDo } = props;
 
     const handleClick = () => {
-        console.log(`valueInput: ${valueInput}`);
+        addNewToDo(valueInput);
     }
 
     const handleOnChange = (name) => {
@@ -22,7 +22,7 @@ const TodoNew = (props) => {
                 onChange={(event) => handleOnChange(event.target.value)}
             />
             <button onClick={handleClick}>Add</button>
-            {addNewToDo(name)}
+            {addNewToDo}
 
             <div>My text input is: {valueInput}</div>
 
