@@ -1,15 +1,12 @@
 const TodoContent = (props) => {
-    //c1
     const { todoList } = props
-
-    
-    console.log("Check props: ", props)
+    //ko dat index lam key, do khi CRUD, key phai tu render lai, hieu nang giam
     return (
         <div className='todo-content'>
             {todoList.map((item, index) => {
                 console.log("Check item: ", item, index)
                 return (
-                    <div className="todo-item">
+                    <div className="todo-item" key={item.id}> 
                         {item.name}
                         <button>Delete</button>
                     </div>
