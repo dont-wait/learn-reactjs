@@ -73,7 +73,6 @@ input {
     filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-
 @keyframes logo-spin {
     from {
         transform: rotate(0deg);
@@ -88,4 +87,20 @@ input {
     .logo {
         animation: logo-spin infinite 20s linear;
     }
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 16px;
+}
+
+.todo-item button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
