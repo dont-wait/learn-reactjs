@@ -2,7 +2,7 @@ import "./Footer.css"
 
 const Footer = () => {
     return (
-        <div class="footer">
+        <div className="footer">
             <p>2025 - @dontwait</p>
         </div>
     )

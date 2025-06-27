@@ -5,6 +5,7 @@ import reactLogo from './assets/react.svg'
 import { useState } from 'react'
 import Header from './layout/Header'
 import Footer from './layout/Footer'
+import { Outlet } from 'react-router-dom'
 const App = () => {
 
   const [todoList, setTodoList] = useState([
@@ -48,6 +49,7 @@ const App = () => {
           </div>
         }
       </div>
+      <Outlet />
       <Footer />
     </>
   )
