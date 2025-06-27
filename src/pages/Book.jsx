@@ -1,10 +1,10 @@
-const ProductPage = () => {
+const BookPage = () => {
     return (
         <div>
-            <h1>Product Page</h1>
+            <h1>Book Page</h1>
             <p>This is the product page content.</p>
         </div>
     );
 }
 
-export default ProductPage;
+export default BookPage;
